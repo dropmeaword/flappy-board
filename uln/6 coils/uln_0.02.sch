@@ -1319,10 +1319,10 @@ Based on the following sources:
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="POWER" width="0.3048" drill="0.9906">
+<class number="0" name="POWER" width="0.3048" drill="0.0254">
 <clearance class="0" value="0.0254"/>
 </class>
-<class number="1" name="DATA" width="0.2032" drill="0.9906">
+<class number="1" name="DATA" width="0.2032" drill="0.0254">
 <clearance class="1" value="0.0254"/>
 </class>
 </classes>
@@ -1343,10 +1343,6 @@ Based on the following sources:
 <part name="J2" library="Seeed-OPL-Connector" deviceset="GROVE-CONNECTOR-DIP(4P-2.0)" device="" value="4P-2.0"/>
 <part name="JP1" library="SparkFun" deviceset="M03" device="PTH"/>
 <part name="JP3" library="SparkFun" deviceset="M04" device="PTH"/>
-<part name="IC3" library="uln-udn" deviceset="ULN2003A" device="D"/>
-<part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="COILVOLTAGE1" library="SparkFun" deviceset="VCC" device="" value="COILVOLTAGE"/>
-<part name="J3" library="Seeed-OPL-Connector" deviceset="GROVE-CONNECTOR-DIP(4P-2.0)" device="" value="4P-2.0"/>
 </parts>
 <sheets>
 <sheet>
@@ -1370,10 +1366,6 @@ Based on the following sources:
 <instance part="J2" gate="G$1" x="105.41" y="80.01"/>
 <instance part="JP1" gate="G$1" x="-99.06" y="86.36"/>
 <instance part="JP3" gate="G$1" x="-78.74" y="63.5"/>
-<instance part="IC3" gate="A" x="55.88" y="101.6"/>
-<instance part="GND1" gate="1" x="40.64" y="91.44" rot="R270"/>
-<instance part="COILVOLTAGE1" gate="1" x="68.58" y="91.44" rot="R270"/>
-<instance part="J3" gate="G$1" x="105.41" y="100.33"/>
 </instances>
 <busses>
 </busses>
@@ -1396,10 +1388,6 @@ Based on the following sources:
 <pinref part="JP1" gate="G$1" pin="1"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-91.44" y1="83.82" x2="-86.36" y2="83.82" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="A" pin="GND"/>
-<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="5V" class="1">
@@ -1431,10 +1419,6 @@ Based on the following sources:
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
 <pinref part="P+1" gate="1" pin="VCC"/>
-</segment>
-<segment>
-<pinref part="IC3" gate="A" pin="CD+"/>
-<pinref part="COILVOLTAGE1" gate="1" pin="VCC"/>
 </segment>
 </net>
 <net name="N$1" class="1">
@@ -1597,22 +1581,6 @@ Based on the following sources:
 <wire x1="-60.96" y1="76.2" x2="-60.96" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="-60.96" y1="63.5" x2="-73.66" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="JP3" gate="G$1" pin="3"/>
-</segment>
-</net>
-<net name="N$8" class="1">
-<segment>
-<pinref part="IC2" gate="A" pin="QA"/>
-<wire x1="-2.54" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="81.28" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="IC3" gate="A" pin="I3"/>
-<wire x1="27.94" y1="93.98" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="1">
-<segment>
-<pinref part="IC3" gate="A" pin="O3"/>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="68.58" y1="104.14" x2="101.6" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
